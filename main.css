@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    padding: 20px;
+    font-size: 20px;
+}
+
+p {
+    margin: 10px 0;
+}
+
+textarea {
+    width: 100%;
+    resize: none;
+    font-size: 30px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+#output {
+    cursor: default;
+}
+
+#output:focus {
+    outline: none;
+}
+
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    z-index: 1;
+}
+
+#overlay h1 {
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
